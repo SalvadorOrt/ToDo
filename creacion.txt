@@ -1,0 +1,10 @@
+CREATE TABLE Tareas (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Descripción NVARCHAR(255) NOT NULL,
+    Estado BIT NOT NULL DEFAULT 0
+);
+INSERT INTO Tareas (Descripción, Estado) VALUES ('Comprar víveres', 1);
+INSERT INTO Tareas (Descripción, Estado) VALUES ('Revisar correo electrónico', 1);
+INSERT INTO Tareas (Descripción, Estado) VALUES ('Hacer ejercicio', 0);
+INSERT INTO Tareas (Descripción, Estado) VALUES ('Leer un capítulo de un libro', 1);
+INSERT INTO Tareas (Descripción, Estado) VALUES ('Limpiar el auto', 0);
